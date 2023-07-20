@@ -1,3 +1,10 @@
+<style>
+	* {
+		font-family: Poppins, sans-serif;
+		font-weight: 200;
+	}
+</style>
+
 <?php include 'includes/session.php'; ?>
 <?php
 $slug = $_GET['category'];
@@ -28,9 +35,9 @@ $pdo->close();
 
 				<!-- Main content -->
 				<section class="content">
-					<div class="row">
+					<div class="row" style="margin-top: 20px;">
 						<div class="col-sm-12">
-							<h1 class="page-header"><?php echo $cat['name']; ?></h1>
+							<h1 class="page-header" style="color: white;"><?php echo $cat['name']; ?></h1>
 							<?php
 
 							$conn = $pdo->open();
@@ -45,12 +52,12 @@ $pdo->close();
 									if ($inc == 1) echo "<div class='row'>";
 									echo "
 	       							<div class='col-sm-4'>
-	       								<div class='box box-solid' >
-		       								<div class='box-body prod-body'  >
-		       									<img src='" . $image . "' width='100%' height='230px' class='thumbnail'>
-		       									<h5><a href='product.php?product=" . $row['slug'] . "'>" . $row['name'] . "</a></h5>
+	       								<div class='box box-solid' style='border-radius: 10px; height: 450; background-color: #D9D9D9'>
+		       								<div class='box-body prod-body' style='padding: 15px;'>
+		       									<img src='" . $image . "' width='100%' height='auto' class='thumbnail' style='border-radius: 10px;' >
+		       									<h5 ><a style='color: black; text-decoration: underline; padding-bottom: 30px' href='product.php?product=" . $row['slug'] . "'>" . $row['name'] . "</a></h5>
 		       								</div>
-		       								<div class='box-footer'>
+		       								<div class='box-footer' style='background-color: #D9D9D9; margin-top: 90px'>
 		       									<b>&#36; " . number_format($row['price'], 2) . "</b>
 		       								</div>
 	       								</div>
