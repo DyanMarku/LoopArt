@@ -3,6 +3,69 @@
 		font-family: Poppins, sans-serif;
 		font-weight: 200;
 	}
+
+	body {
+		margin: 0;
+		padding: 0;
+		background-color: #383838;
+	}
+
+	.content-wrapper {
+		padding-top: 20px;
+	}
+
+	.page-header {
+		color: white;
+		margin-top: 0;
+	}
+
+	.row {
+		margin-left: -15px;
+		margin-right: -15px;
+	}
+
+	.col-sm-4 {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+
+	.box {
+		border-radius: 10px;
+		background-color: #D9D9D9;
+		height: 100%;
+	}
+
+	.prod-body {
+		padding: 15px;
+	}
+
+	.thumbnail {
+		border-radius: 10px;
+		width: 100%;
+		height: auto;
+	}
+
+	.box-footer {
+		background-color: #D9D9D9;
+		margin-top: 15px;
+	}
+
+	/* Media queries for responsiveness */
+	@media (max-width: 768px) {
+		.page-header {
+			text-align: center;
+		}
+
+		.col-sm-4 {
+			width: 50%;
+		}
+	}
+
+	@media (max-width: 480px) {
+		.col-sm-4 {
+			width: 100%;
+		}
+	}
 </style>
 
 <?php include 'includes/session.php'; ?>

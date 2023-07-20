@@ -51,7 +51,7 @@
             <div class="container">
                 <div class="contact-wrap">
                     <div class="contact-in">
-                        <h1 style="padding-bottom: 20px; font-weight: bold; color: #EE4D2D;">CONTACT INFO</h1>
+                        <h1 style="padding-bottom: 20px; font-weight: bold; color: white;">CONTACT INFO</h1>
                         <h4 style="font-weight: bold;"><i class="fa fa-phone" aria-hidden="true"></i> Phone</h4>
                         <p style="font-weight: 200; padding-bottom: 20px;">123-456-789</p>
                         <h4 style="font-weight: bold;"><i class="fa fa-envelope" aria-hidden="true"></i> Email</h4>

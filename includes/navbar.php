@@ -3,12 +3,25 @@
     font-family: Poppins, sans-serif;
     font-weight: bold;
   }
+
+  .navbar {
+    position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 100;
+      padding: 0px 0;
+  }
+
+  .container {
+    padding-top: 80px;
+  }
 </style>
 
-<header class="main-header" >
+<header class="main-header">
   <nav class="navbar navbar-static-top" style="background-color: #232323;">
     <div class="container" style="padding-top: 10px; ">
-      <div class="navbar-header" >
+      <div class="navbar-header">
         <a href="index.php" class="navbar-brand" style="margin-top: 10px;"><b style="font-size: 30px;">LoopArt</b></a>
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
           <i class="fa fa-bars"></i>
@@ -57,15 +70,15 @@
       <!-- /.navbar-collapse -->
       <!-- Navbar Right Menu -->
       <div class="navbar-custom-menu" style="padding-top: 10px; padding-bottom:10px;  ">
-        <ul class="nav navbar-nav" >
-          <li class="dropdown messages-menu" >
+        <ul class="nav navbar-nav">
+          <li class="dropdown messages-menu">
 
             <!-- Menu toggle button -->
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" >
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
               <i class="fa fa-shopping-cart" style="font-size: 20px; color: #EE4D2D;"></i>
               <span class="label label-success cart_count"></span>
             </a>
-            <ul class="dropdown-menu" style="width: 400px;" >
+            <ul class="dropdown-menu" style="width: 400px;">
               <li class="header">You have <span class="cart_count"></span> item(s) in cart</li>
               <li>
                 <ul class="menu" id="cart_menu">

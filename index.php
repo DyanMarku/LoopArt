@@ -1,3 +1,29 @@
+<style>
+	#carousel-example-generic {
+		border-radius: 20px;
+		box-shadow: -11px -5px 50px -18px rgba(0, 0, 0, 0.42);
+		-webkit-box-shadow: -11px -5px 50px -18px rgba(0, 0, 0, 0.42);
+		-moz-box-shadow: -11px -5px 50px -18px rgba(0, 0, 0, 0.42);
+	}
+
+	.carousel-inner {
+		border-radius: 20px;
+		box-shadow: -11px -5px 50px -18px rgba(0, 0, 0, 0.42);
+		-webkit-box-shadow: -11px -5px 50px -18px rgba(0, 0, 0, 0.42);
+		-moz-box-shadow: -11px -5px 50px -18px rgba(0, 0, 0, 0.42);
+	}
+
+	.pic-container {
+		padding: 20px;
+	}
+
+	.pic-container img {
+		box-shadow: -9px 8px 16px 3px rgba(0,0,0,0.43);
+-webkit-box-shadow: -9px 8px 16px 3px rgba(0,0,0,0.43);
+-moz-box-shadow: -9px 8px 16px 3px rgba(0,0,0,0.43);
+	}
+</style>
+
 <?php include 'includes/session.php'; ?>
 <?php include 'includes/header.php'; ?>
 
@@ -60,8 +86,19 @@
 
 			</div>
 		</div>
+	</div>
 
 
+	<div class="content-wrapper" align="center">
+		<div class="pic-container">
+			<img src="images/carousel2.jpg" style="align-items: center;">
+		</div>
+		<div class="pic-container">
+			<img src="images/carousel3.jpg" style="align-items: center;">
+		</div>
+		<div class="pic-container">
+			<img src="images/carousel4.jpg" style="align-items: center;">
+		</div>
 	</div>
 
 	<?php include 'includes/scripts.php'; ?>
