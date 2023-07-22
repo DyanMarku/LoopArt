@@ -14,10 +14,10 @@
 
 
       <!-- Main content -->
-      <section class="content" style="padding: 50px;">
+      <section class="content" style="padding: 50px; ">
         <div class="row">
           <div class="col-xs-12">
-            <div class="box" style="border-radius: 10px;">
+            <div class="box" style="border-radius: 10px; background-color: #D9D9D9">
               <div class="box-header with-border">
                 <div class="pull-right">
                   <form method="POST" class="form-inline" action="sales_print.php">

@@ -36,7 +36,7 @@
         ?>
         <div class="row">
           <div class="col-xs-12">
-            <div class="box" style="border-radius: 10px;">
+            <div class="box" style="border-radius: 10px; background-color: #D9D9D9;">
               <div class="box-header with-border">
                 <a href="#addnew" data-toggle="modal" class="btn btn-primary btn-sm btn-flat" style="background-color: #EE4D2D; border-color:#EE4D2D; "> <i class="fa fa-plus"></i> New</a>
               </div>

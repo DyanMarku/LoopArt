@@ -5,9 +5,9 @@
   <!-- Logo -->
   <a href="#" class="logo">
     <!-- mini logo for sidebar mini 50x50 pixels -->
-    <span class="logo-mini"><img src="image-admin/loopwhite.png" style="width: 40px;"></span>
+    <span class="logo-mini"><img src="image-admin/loopwhite.png" style="width: 50px;"></span>
     <!-- logo for regular state and mobile devices -->
-    <span class="logo-lg"><img src="image-admin/loopwhite.png" style="width: 35px; margin-right: 10px"><b>Loop Art</b></span>
+    <span class="logo-lg"><img src="image-admin/loopwhite.png" style="width: 32px; margin-right: 5px"><b>Loop Art</b></span>
   </a>
   <!-- Header Navbar: style can be found in header.less -->
   <nav class="navbar navbar-static-top" style="background-color: #232323;">

@@ -157,7 +157,7 @@ $conn = $pdo->open();
         <!-- /.row -->
         <div class="row">
           <div class="col-xs-12">
-            <div class="box" style="background-color: white; border-radius: 10px">
+            <div class="box" style="background-color: #D9D9D9; border-radius: 10px">
               <div class="box-header with-border">
                 <h3 class="box-title">Monthly Sales Report</h3>
                 <div class="box-tools pull-right">

@@ -1,3 +1,6 @@
+
+
+
 <?php include 'includes/session.php'; ?>
 <?php include 'includes/header.php'; ?>
 
@@ -37,19 +40,19 @@
         ?>
         <div class="row">
           <div class="col-xs-12">
-            <div class="box" style="border-radius: 10px;">
-              <div class="box-header with-border">
+            <div class="box" style="border-radius: 10px; background-color: #D9D9D9">
+              <div class="box-header with-border" style="border-color: gray">
                 <a href="#addnew" data-toggle="modal" class="btn btn-primary btn-sm btn-flat" style="background-color: #EE4D2D; border-color:#EE4D2D; "><i class="fa fa-plus"></i> New</a>
               </div>
-              <div class="box-body">
-                <table id="example1" class="table table-bordered">
-                  <thead>
-                    <th>Photo</th>
-                    <th>Email</th>
-                    <th>Name</th>
-                    <th>Status</th>
-                    <th>Date Added</th>
-                    <th>Tools</th>
+              <div class="box-body" style="border-color: gray">
+                <table id="example1" class="table table-bordered" style="border-color: gray">
+                  <thead >
+                    <th style='border-color: gray;'>Photo</th>
+                    <th style='border-color: gray;'>Email</th>
+                    <th style='border-color: gray;'>Name</th>
+                    <th style='border-color: gray;'>Status</th>
+                    <th style='border-color: gray;'>Date Added</th>
+                    <th style='border-color: gray;'>Tools</th>
                   </thead>
                   <tbody>
                     <?php
@@ -63,19 +66,19 @@
                         $status = ($row['status']) ? '<span class="label label-success">active</span>' : '<span class="label label-danger">not verified</span>';
                         $active = (!$row['status']) ? '<span class="pull-right"><a href="#activate" class="status" data-toggle="modal" data-id="' . $row['id'] . '"><i class="fa fa-check-square-o"></i></a></span>' : '';
                         echo "
-                          <tr>
-                            <td>
+                          <tr >
+                            <td style='border-color: gray;'>
                               <img src='" . $image . "' height='30px' width='30px'>
                               <span class='pull-right'><a href='#edit_photo' class='photo' data-toggle='modal' data-id='" . $row['id'] . "'><i class='fa fa-edit'></i></a></span>
                             </td>
-                            <td>" . $row['email'] . "</td>
-                            <td>" . $row['firstname'] . ' ' . $row['lastname'] . "</td>
-                            <td>
+                            <td style='border-color: gray;'>" . $row['email'] . "</td>
+                            <td style='border-color: gray;'>" . $row['firstname'] . ' ' . $row['lastname'] . "</td>
+                            <td style='border-color: gray;'>
                               " . $status . "
                               " . $active . "
                             </td>
-                            <td>" . date('M d, Y', strtotime($row['created_on'])) . "</td>
-                            <td>
+                            <td style='border-color: gray;'>" . date('M d, Y', strtotime($row['created_on'])) . "</td>
+                            <td style='border-color: gray;'>
                               <a href='cart.php?user=" . $row['id'] . "' class='btn btn-info btn-sm btn-flat'><i class='fa fa-search'></i> Cart</a>
                               <button class='btn btn-success btn-sm edit btn-flat' data-id='" . $row['id'] . "'><i class='fa fa-edit'></i> Edit</button>
                               <button class='btn btn-danger btn-sm delete btn-flat' data-id='" . $row['id'] . "'><i class='fa fa-trash'></i> Delete</button>

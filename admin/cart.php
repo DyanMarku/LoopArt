@@ -109,7 +109,6 @@
     </section>
      
   </div>
-  	<?php include 'includes/footer.php'; ?>
     <?php include 'includes/cart_modal.php'; ?>
 
 </div>
