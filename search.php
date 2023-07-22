@@ -48,7 +48,7 @@
 		       									<h5><a style='color: black' href='product.php?product=" . $row['slug'] . "'>" . $highlighted . "</a></h5>
 		       								</div>
 		       								<div class='box-footer'>
-		       									<b style='color: black'>&#36; " . number_format($row['price'], 2) . "</b>
+		       									<b style='color: black'>&#8369; " . number_format($row['price'], 2) . "</b>
 		       								</div>
 	       								</div>
 	       							</div>

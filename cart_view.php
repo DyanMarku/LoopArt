@@ -30,6 +30,7 @@
 									</table>
 								</div>
 							</div>
+							
 							<?php
 							if (isset($_SESSION['user'])) {
 								echo "
@@ -41,6 +42,7 @@
 	        				";
 							}
 							?>
+
 						</div>
 
 					</div>
@@ -52,6 +54,7 @@
 	</div>
 
 	<?php include 'includes/scripts.php'; ?>
+	
 	<script>
 		var total = 0;
 		$(function() {
@@ -153,6 +156,7 @@
 			});
 		}
 	</script>
+
 	<!-- Paypal Express -->
 	<script>
 		paypal.Button.render({

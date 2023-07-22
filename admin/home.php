@@ -1,3 +1,9 @@
+<style>
+  .small-box {
+    border-radius: 10px
+  }
+</style>
+
 <?php
 include 'includes/session.php';
 include 'includes/format.php';
@@ -21,19 +27,10 @@ $conn = $pdo->open();
 
     <!-- Content Wrapper. Contains page content -->
     <div class="content-wrapper">
-      <!-- Content Header (Page header) -->
-      <section class="content-header">
-        <h1 style="color: white;">
-          Dashboard
-        </h1>
-        <ol class="breadcrumb">
-          <li><a href="#" style="color: wheat;"><i class="fa fa-dashboard"></i> Home</a></li>
-          <li class="active" style="color: wheat;">Dashboard</li>
-        </ol>
-      </section>
+
 
       <!-- Main content -->
-      <section class="content">
+      <section class="content" style="padding: 50px;">
         <?php
         if (isset($_SESSION['error'])) {
           echo "
@@ -56,11 +53,12 @@ $conn = $pdo->open();
           unset($_SESSION['success']);
         }
         ?>
+
         <!-- Small boxes (Stat box) -->
         <div class="row">
           <div class="col-lg-3 col-xs-6">
             <!-- small box -->
-            <div class="small-box bg-aqua">
+            <div class="small-box" style="background-color: #4a4a4a; color: white; border-radius: 10px">
               <div class="inner">
                 <?php
                 $stmt = $conn->prepare("SELECT * FROM details LEFT JOIN products ON products.id=details.product_id");
@@ -71,20 +69,21 @@ $conn = $pdo->open();
                   $subtotal = $srow['price'] * $srow['quantity'];
                   $total += $subtotal;
                 }
-
-                echo "<h3>&#36; " . number_format_short($total, 2) . "</h3>";
+                echo "<h3>&#8369; " . number_format_short($total, 2) . "</h3>";
                 ?>
                 <p>Total Sales</p>
               </div>
               <div class="icon">
-                <i class="fa fa-shopping-cart" style="margin: 10px;"></i>
+                <i class="fa fa-shopping-cart" style="margin: 10px; color: black"></i>
               </div>
             </div>
           </div>
+
+
           <!-- ./col -->
           <div class="col-lg-3 col-xs-6">
             <!-- small box -->
-            <div class="small-box bg-green">
+            <div class="small-box" style="background-color: #4a4a4a; color: white; border-radius: 10px">
               <div class="inner">
                 <?php
                 $stmt = $conn->prepare("SELECT *, COUNT(*) AS numrows FROM products");
@@ -97,14 +96,16 @@ $conn = $pdo->open();
                 <p>Number of Products</p>
               </div>
               <div class="icon">
-                <i class="fa fa-barcode" style="margin: 10px;"></i>
+                <i class="fa fa-barcode" style="margin: 10px; color: black"></i>
               </div>
             </div>
           </div>
+
+
           <!-- ./col -->
           <div class="col-lg-3 col-xs-6">
             <!-- small box -->
-            <div class="small-box bg-yellow">
+            <div class="small-box" style="background-color: #4a4a4a; color: white; border-radius: 10px">
               <div class="inner">
                 <?php
                 $stmt = $conn->prepare("SELECT *, COUNT(*) AS numrows FROM users");
@@ -117,14 +118,16 @@ $conn = $pdo->open();
                 <p>Number of Users</p>
               </div>
               <div class="icon">
-                <i class="fa fa-users" style="margin: 15px;"></i>
+                <i class="fa fa-users" style="margin: 15px; color: black"></i>
               </div>
             </div>
           </div>
+
+
           <!-- ./col -->
           <div class="col-lg-3 col-xs-6">
             <!-- small box -->
-            <div class="small-box bg-red">
+            <div class="small-box" style="background-color: #4a4a4a; color: white; border-radius: 10px">
               <div class="inner">
                 <?php
                 $stmt = $conn->prepare("SELECT * FROM details LEFT JOIN sales ON sales.id=details.sales_id LEFT JOIN products ON products.id=details.product_id WHERE sales_date=:sales_date");
@@ -136,23 +139,25 @@ $conn = $pdo->open();
                   $total += $subtotal;
                 }
 
-                echo "<h3>&#36; " . number_format_short($total, 2) . "</h3>";
+                echo "<h3>&#8369; " . number_format_short($total, 2) . "</h3>";
 
                 ?>
 
                 <p>Sales Today</p>
               </div>
               <div class="icon">
-                <i class="fa fa-money" style="margin: 10px;"></i>
+                <i class="fa fa-money" style="margin: 10px; color: black"></i>
               </div>
             </div>
           </div>
+
+
           <!-- ./col -->
         </div>
         <!-- /.row -->
         <div class="row">
           <div class="col-xs-12">
-            <div class="box">
+            <div class="box" style="background-color: white; border-radius: 10px">
               <div class="box-header with-border">
                 <h3 class="box-title">Monthly Sales Report</h3>
                 <div class="box-tools pull-right">

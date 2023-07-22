@@ -6,11 +6,11 @@
 
   .navbar {
     position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
-      z-index: 100;
-      padding: 0px 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    padding: 0px 0;
   }
 
   .container {
@@ -22,7 +22,9 @@
   <nav class="navbar navbar-static-top" style="background-color: #232323;">
     <div class="container" style="padding-top: 10px; ">
       <div class="navbar-header">
-        <a href="index.php" class="navbar-brand" style="margin-top: 10px;"><b style="font-size: 30px;">LoopArt</b></a>
+
+        <a href="index.php" class="navbar-brand" style="margin-top: 10px;">
+        <b style="font-size: 30px;">LoopArt</b></a>
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
           <i class="fa fa-bars"></i>
         </button>
@@ -36,7 +38,7 @@
           <li><a href="contact_us.php">CONTACT US</a></li>
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">CATEGORY <span class="caret"></span></a>
-            <ul class="dropdown-menu" role="menu" style="background-color: #ffff; border-color:#232323">
+            <ul class="dropdown-menu" role="menu" style="background-color: #757575; border-color:#232323">
               <?php
 
               $conn = $pdo->open();
@@ -45,7 +47,7 @@
                 $stmt->execute();
                 foreach ($stmt as $row) {
                   echo "
-                      <li><a href='category.php?category=" . $row['cat_slug'] . "'>" . $row['name'] . "</a></li>
+                      <li><a style='color: white' href='category.php?category=" . $row['cat_slug'] . "'>" . $row['name'] . "</a></li>
                     ";
                 }
               } catch (PDOException $e) {

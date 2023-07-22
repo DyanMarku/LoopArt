@@ -18,9 +18,9 @@
 	}
 
 	.pic-container img {
-		box-shadow: -9px 8px 16px 3px rgba(0,0,0,0.43);
--webkit-box-shadow: -9px 8px 16px 3px rgba(0,0,0,0.43);
--moz-box-shadow: -9px 8px 16px 3px rgba(0,0,0,0.43);
+		box-shadow: -9px 8px 16px 3px rgba(0, 0, 0, 0.43);
+		-webkit-box-shadow: -9px 8px 16px 3px rgba(0, 0, 0, 0.43);
+		-moz-box-shadow: -9px 8px 16px 3px rgba(0, 0, 0, 0.43);
 	}
 </style>
 

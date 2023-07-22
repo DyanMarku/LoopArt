@@ -80,7 +80,7 @@ if ($product['date_view'] == $now) {
 								</div>
 								<div class="col-sm-6">
 									<h1 class="page-header" style="font-weight: bold;"><?php echo $product['prodname']; ?></h1>
-									<h3><b>&#36; <?php echo number_format($product['price'], 2); ?></b></h3>
+									<h3><b>&#8369; <?php echo number_format($product['price'], 2); ?></b></h3>
 									<p><b style="font-size: 20px;">Category:</b> <a style="color: #EE4D2D; font-size: 20px;" href="category.php?category=<?php echo $product['cat_slug']; ?>"><?php echo $product['catname']; ?></a></p>
 									<p><b style="font-size: 20px;">Description:</b></p>
 									<p><?php echo $product['description']; ?></p>

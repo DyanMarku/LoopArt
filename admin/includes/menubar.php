@@ -1,22 +1,23 @@
-<aside class="main-sidebar">
+
+<aside class="main-sidebar" style="background-color: #2b2b2b;">
   <!-- sidebar: style can be found in sidebar.less -->
-  <section class="sidebar">
+  <section class="sidebar" style="background-color: #2b2b2b;">
     <!-- Sidebar user panel -->
     <div class="user-panel">
       <div class="pull-left image">
-        <img src="<?php echo (!empty($admin['photo'])) ? '../images/'.$admin['photo'] : '../images/profile.jpg'; ?>" class="img-circle" alt="User Image">
+        <img src="<?php echo (!empty($admin['photo'])) ? '../images/' . $admin['photo'] : '../images/profile.jpg'; ?>" class="img-circle" alt="User Image">
       </div>
-      <div class="pull-left info">
-        <p><?php echo $admin['firstname'].' '.$admin['lastname']; ?></p>
+      <div class="pull-left info"  style="color: #EE4D2D;">
+        <p><?php echo $admin['firstname'] . ' ' . $admin['lastname']; ?></p>
         <a><i class="fa fa-circle text-success"></i> Online</a>
       </div>
     </div>
     <!-- sidebar menu: : style can be found in sidebar.less -->
-    <ul class="sidebar-menu" data-widget="tree">
-      <li class="header">REPORTS</li>
+    <ul class="sidebar-menu" data-widget="tree" >
+      <li class="header" style="color: #EE4D2D;">REPORTS</li>
       <li><a href="home.php"><i class="fa fa-dashboard"></i> <span>Dashboard</span></a></li>
       <li><a href="sales.php"><i class="fa fa-money"></i> <span>Sales</span></a></li>
-      <li class="header">MANAGE</li>
+      <li class="header"  style="color: #EE4D2D;">MANAGE</li>
       <li><a href="users.php"><i class="fa fa-users"></i> <span>Users</span></a></li>
       <li class="treeview">
         <a href="#">

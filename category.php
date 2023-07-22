@@ -117,11 +117,11 @@ $pdo->close();
 	       							<div class='col-sm-4'>
 	       								<div class='box box-solid' style='border-radius: 10px; height: 450; background-color: #D9D9D9'>
 		       								<div class='box-body prod-body' style='padding: 15px;'>
-		       									<img src='" . $image . "' width='100%' height='auto' class='thumbnail' style='border-radius: 10px;' >
+		       									<a href='product.php?product=" . $row['slug'] . "'> <img src='" . $image . "'  width='100%' height='auto' class='thumbnail' style='border-radius: 10px;' > </a>
 		       									<h5 ><a style='color: black; text-decoration: underline; padding-bottom: 30px' href='product.php?product=" . $row['slug'] . "'>" . $row['name'] . "</a></h5>
 		       								</div>
 		       								<div class='box-footer' style='background-color: #D9D9D9; margin-top: 90px'>
-		       									<b>&#36; " . number_format($row['price'], 2) . "</b>
+		       									<b>&#8369; " . number_format($row['price'], 2) . "</b>
 		       								</div>
 	       								</div>
 	       							</div>

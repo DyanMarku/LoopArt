@@ -1,6 +1,8 @@
 <?php include 'includes/session.php'; ?>
 <?php include 'includes/header.php'; ?>
 
+
+
 <body class="hold-transition skin-blue sidebar-mini">
   <div class="wrapper">
 
@@ -9,22 +11,13 @@
 
     <!-- Content Wrapper. Contains page content -->
     <div class="content-wrapper">
-      <!-- Content Header (Page header) -->
-      <section class="content-header">
-        <h1 style="color: white;">
-          Sales History
-        </h1>
-        <ol class="breadcrumb">
-          <li><a href="#" style="color: wheat;"><i class="fa fa-dashboard"></i> Home</a></li>
-          <li class="active" style="color: wheat;">Sales</li>
-        </ol>
-      </section>
+
 
       <!-- Main content -->
-      <section class="content">
+      <section class="content" style="padding: 50px;">
         <div class="row">
           <div class="col-xs-12">
-            <div class="box">
+            <div class="box" style="border-radius: 10px;">
               <div class="box-header with-border">
                 <div class="pull-right">
                   <form method="POST" class="form-inline" action="sales_print.php">
@@ -34,7 +27,7 @@
                       </div>
                       <input type="text" class="form-control pull-right col-sm-8" id="reservation" name="date_range">
                     </div>
-                    <button type="submit" class="btn btn-success btn-sm btn-flat" name="print"><span class="glyphicon glyphicon-print"></span> Print</button>
+                    <button type="submit" class="btn btn-success btn-sm btn-flat" name="print" style="background-color: #EE4D2D; border-color:#EE4D2D; "><span class="glyphicon glyphicon-print"></span> Print</button>
                   </form>
                 </div>
               </div>
@@ -168,6 +161,9 @@
       });
     });
   </script>
+
+  
+  
 </body>
 
 </html>
