@@ -29,11 +29,7 @@ if (!isset($_GET['user'])) {
         <h1 style="color: white;">
           <?php echo $user['firstname'] . ' ' . $user['lastname'] . '`s Cart' ?>
         </h1>
-        <ol class="breadcrumb">
-          <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-          <li>Users</li>
-          <li class="active">Cart</li>
-        </ol>
+
       </section>
 
       <!-- Main content -->

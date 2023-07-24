@@ -99,9 +99,9 @@
                     <img src="' . $image . '" class="user-image" alt="User Image">
                     <span class="hidden-xs">' . $user['firstname'] . ' ' . $user['lastname'] . '</span>
                   </a>
-                  <ul class="dropdown-menu" >
+                  <ul class="dropdown-menu" style="width: 200px; border-radius: 10px 0 0 0; ">
                     <!-- User image -->
-                    <li class="user-header" > 
+                    <li class="user-header" style="background-color: #383838; border-radius: 10px 0 0 0; "> 
                       <img src="' . $image . '" class="img-circle" alt="User Image">
 
                       <p>
@@ -109,12 +109,12 @@
                         <small>Member since ' . date('M. Y', strtotime($user['created_on'])) . '</small>
                       </p>
                     </li>
-                    <li class="user-footer" >
-                      
+                    
+                    <li class="user-footer" style="background-color: gray;">
                       <div class="pull-right">
                         <a href="logout.php" class="btn btn-default btn-flat">Sign out</a>
                       </div>
-                      <div class="pull-right" >
+                      <div class="pull-left" >
                         <a href="profile.php" class="btn btn-default btn-flat">Profile</a>
                       </div>
                     </li>

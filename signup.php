@@ -72,7 +72,7 @@ if (isset($_SESSION['captcha'])) {
         if (!isset($_SESSION['captcha'])) {
           echo '
                 <div class="form-group" style="width:100%;">
-                  <div class="g-recaptcha" data-sitekey="6LevO1IUAAAAAFX5PpmtEoCxwae-I8cCQrbhTfM6"></div>
+                  <div class="g-recaptcha" data-sitekey="6LfY9k4nAAAAAJusQBmzwbTgMRYUkTwrKsNEWmGY"></div>
                 </div>
               ';
         }
@@ -93,5 +93,7 @@ if (isset($_SESSION['captcha'])) {
 
   <?php include 'includes/scripts.php' ?>
 </body>
+
+
 
 </html>

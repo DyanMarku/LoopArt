@@ -76,6 +76,7 @@ $conn = $pdo->open();
               <div class="icon">
                 <i class="fa fa-shopping-cart" style="margin: 10px; color: black"></i>
               </div>
+              <div class="small-box-footer">.</div>
             </div>
           </div>
 
@@ -98,6 +99,7 @@ $conn = $pdo->open();
               <div class="icon">
                 <i class="fa fa-barcode" style="margin: 10px; color: black"></i>
               </div>
+              <div class="small-box-footer">.</div>
             </div>
           </div>
 
@@ -120,6 +122,7 @@ $conn = $pdo->open();
               <div class="icon">
                 <i class="fa fa-users" style="margin: 15px; color: black"></i>
               </div>
+              <div class="small-box-footer">.</div>
             </div>
           </div>
 
@@ -148,6 +151,7 @@ $conn = $pdo->open();
               <div class="icon">
                 <i class="fa fa-money" style="margin: 10px; color: black"></i>
               </div>
+              <div class="small-box-footer">.</div>
             </div>
           </div>
 

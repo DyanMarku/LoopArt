@@ -26,7 +26,7 @@
           </a>
           <ul class="dropdown-menu">
             <!-- User image -->
-            <li class="user-header" style="background-color: gray;">
+            <li class="user-header" style="background-color: #383838;">
               <img src="<?php echo (!empty($admin['photo'])) ? '../images/' . $admin['photo'] : '../images/profile.jpg'; ?>" class="img-circle" alt="User Image">
 
               <p>

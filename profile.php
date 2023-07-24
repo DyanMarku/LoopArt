@@ -54,7 +54,7 @@ if (!isset($_SESSION['user'])) {
 											<div class="col-sm-9">
 												<h4><?php echo $user['firstname'] . ' ' . $user['lastname']; ?>
 													<span class="pull-right">
-														<a href="#edit" class="btn btn-success btn-flat btn-sm" data-toggle="modal"><i class="fa fa-edit"></i> Edit</a>
+														<a href="#edit" class="btn btn-success btn-flat btn-sm" data-toggle="modal" style="background-color: #EE4D2D; border-color: transparent;"><i class="fa fa-edit"></i> Edit</a>
 													</span>
 												</h4>
 												<h4><?php echo $user['email']; ?></h4>
