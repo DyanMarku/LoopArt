@@ -1,3 +1,6 @@
+<style>
+  
+</style>
 
 <aside class="main-sidebar" style="background-color: #2b2b2b;">
   <!-- sidebar: style can be found in sidebar.less -->
@@ -14,10 +17,10 @@
     </div>
     <!-- sidebar menu: : style can be found in sidebar.less -->
     <ul class="sidebar-menu" data-widget="tree" >
-      <li class="header" style="color: #EE4D2D;">REPORTS</li>
+      <li class="header" style="color: #FEFEFA ;">REPORTS</li>
       <li><a href="home.php"><i class="fa fa-dashboard"></i> <span>Dashboard</span></a></li>
       <li><a href="sales.php"><i class="fa fa-money"></i> <span>Sales</span></a></li>
-      <li class="header"  style="color: #EE4D2D;">MANAGE</li>
+      <li class="header"  style="color: #FEFEFA ;">MANAGE</li>
       <li><a href="users.php"><i class="fa fa-users"></i> <span>Users</span></a></li>
       <li class="treeview">
         <a href="#">

@@ -26,7 +26,7 @@ $conn = $pdo->open();
     <?php include 'includes/menubar.php'; ?>
 
     <!-- Content Wrapper. Contains page content -->
-    <div class="content-wrapper">
+    <div class="content-wrapper" style="background-color: #383838;">
 
 
       <!-- Main content -->

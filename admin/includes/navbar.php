@@ -7,7 +7,7 @@
     <!-- mini logo for sidebar mini 50x50 pixels -->
     <span class="logo-mini"><img src="image-admin/loopwhite.png" style="width: 50px;"></span>
     <!-- logo for regular state and mobile devices -->
-    <span class="logo-lg"><img src="image-admin/loopwhite.png" style="width: 32px; margin-right: 5px"><b>Loop Art</b></span>
+    <span class="logo-lg"><img src="image-admin/loopwhite.png" style="width: 32px; margin-right: 5px; color: #FEFEFA  "><b>Loop Art</b></span>
   </a>
   <!-- Header Navbar: style can be found in header.less -->
   <nav class="navbar navbar-static-top" style="background-color: #232323;">
@@ -21,7 +21,7 @@
         <!-- User Account: style can be found in dropdown.less -->
         <li class="dropdown user user-menu">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-            <img style="border:solid #EE4D2D ; " src="<?php echo (!empty($admin['photo'])) ? '../images/' . $admin['photo'] : '../images/profile.jpg'; ?>" class="user-image" alt="User Image">
+            <img style="border:solid gray; " src="<?php echo (!empty($admin['photo'])) ? '../images/' . $admin['photo'] : '../images/profile.jpg'; ?>" class="user-image" alt="User Image">
             <span class="hidden-xs" style="color: white; font-weight: bold"><?php echo $admin['firstname'] . ' ' . $admin['lastname']; ?></span>
           </a>
           <ul class="dropdown-menu">

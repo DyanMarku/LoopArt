@@ -3,38 +3,15 @@
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/about_us.css" />
+
+
     <style>
         .profile-container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-
-        .profile-card {
-            flex-basis: 100%;
-            max-width: 200px;
-            text-align: center;
-            margin: 15px;
-        }
-
-        .profile-pic {
-            width: 100%;
-            height: auto;
-            border-radius: 50%;
-            object-fit: cover;
-        }
-
-        .profile-name {
-            margin-top: 15px;
-            color: #EE4D2D;
-            font-size: 18px;
-        }
-
-        .profile-role {
-            margin-top: 5px;
-            color: #979797;
-            font-weight: 100;
-            font-size: 12px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-gap: 1px;
+            margin-top: 20px;
         }
 
         @media only screen and (min-width: 576px) {
@@ -59,43 +36,77 @@
 </head>
 
 <body class="hold-transition skin-blue layout-top-nav">
-    <div class="wrapper">
-        <?php include 'includes/navbar.php'; ?>
+    <?php include 'includes/navbar.php'; ?>
 
-        <div class="content-wrapper">
-            <div class="container">
-                <!-- Main content -->
-                <section class="content">
-                    <div class="row">
-                        <h1 style="text-align: center; color: #EE4D2D; font-weight: bold; padding-top: 40px;">MEET THE TEAM</h1>
+    <div class="content-wrapper">
+        <div class="container">
+            <!-- Main content -->
 
-                        <div class="profile-container">
+            <h1 style="text-align: center; color: #EE4D2D; font-weight: bold; padding-top: 40px;">MEET THE TEAM</h1>
+            <div class="profile-container">
 
-                            <div class="profile-card">
-                                <a href="https://www.facebook.com/akosireymarrr"><img src="images/reymar.jpg" alt="Profile 2" class="profile-pic"></a>
-                                <div class="profile-name">Reymar Sison</div>
-                                <div class="profile-role">Founder of LoopArt</div>
-                            </div>
-                            <div class="profile-card">
-                                <a href="https://www.facebook.com/Haberrry"><img src="images/haber.jpg" alt="Profile 1" class="profile-pic"></a>
-                                <div class="profile-name">Jhon Mark Haber</div>
-                                <div class="profile-role">Web Developer</div>
-                            </div>
-                            <div class="profile-card">
-                                <a href="https://www.facebook.com/julianvoltaire.dumaraog"><img src="images/julian.png" alt="Profile 3" class="profile-pic"></a>
-                                <div class="profile-name">Julian Voltaire Dumaraog</div>
-                                <div class="profile-role">Web Designer</div>
-                            </div>
-                            <div class="profile-card">
-                                <a href="https://www.facebook.com/christianblascandelario"> <img src="images/chris.png" alt="Profile 4" class="profile-pic"></a>
-                                <div class="profile-name">Christian Candelario</div>
-                                <div class="profile-role">Web Designer</div>
-                            </div>
-
+                <div class="photo-card">
+                    <div class="profile-card-outer">
+                        <div class="profile-card-inner">
+                            <a href="https://www.facebook.com/akosireymarrr">
+                                <img title="Reymar Sison" src="images/reymar.jpg" alt="Profile 2" class="profile-pic">
+                            </a>
+                            <a href="https://www.facebook.com/akosireymarrr" target="_blank">
+                                <img title="Reymar Sison" src="images/reymar.jpg" alt="Profile 2" class="profile-pic-hover">
+                            </a>
                         </div>
                     </div>
-                </section>
+                    <div class="profile-name">Reymar Sison</div>
+                    <div class="profile-role">Founder of LoopArt</div>
+                </div>
+
+                <div class="photo-card">
+                    <div class="profile-card-outer">
+                        <div class="profile-card-inner">
+                            <a href="https://www.facebook.com/Haberrry">
+                                <img title="Jhon Mark Haber" src="images/haber.jpg" alt="Profile 1" class="profile-pic">
+                            </a>
+                            <a href="https://www.facebook.com/Haberrry" target="_blank">
+                                <img title="Jhon Mark Haber" src="images/haber.jpg" alt="Profile 1" class="profile-pic-hover">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="profile-name">Jhon Mark Haber</div>
+                    <div class="profile-role">Web Developer</div>
+                </div>
+
+                <div class="photo-card">
+                    <div class="profile-card-outer">
+                        <div class="profile-card-inner">
+                            <a href="https://www.facebook.com/julianvoltaire.dumaraog">
+                                <img title="Julian Voltaire Dumaraog" src="images/julian.png" alt="Profile 3" class="profile-pic">
+                            </a>
+                            <a href="https://www.facebook.com/julianvoltaire.dumaraog" target="_blank">
+                                <img title="Julian Voltaire Dumaraog" src="images/julian.png" alt="Profile 3" class="profile-pic-hover">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="profile-name">Julian Voltaire Dumaraog</div>
+                    <div class="profile-role">Web Designer</div>
+                </div>
+
+                <div class="photo-card">
+                    <div class="profile-card-outer">
+                        <div class="profile-card-inner">
+                            <a href="https://www.facebook.com/christianblascandelario">
+                                <img title="Christian Candelario" src="images/chris.png" alt="Profile 4" class="profile-pic">
+                            </a>
+                            <a href="https://www.facebook.com/christianblascandelario" target="_blank">
+                                <img title="Christian Candelario" src="images/chris.png" alt="Profile 4" class="profile-pic-hover">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="profile-name">Christian Candelario</div>
+                    <div class="profile-role">Web Designer</div>
+                </div>
+
             </div>
+
         </div>
     </div>
     <?php include 'includes/scripts.php'; ?>

@@ -1,0 +1,61 @@
+.photo-card {
+  margin: 20px;
+}
+
+.profile-card-outer {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.profile-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s;
+}
+
+/* First Image */
+.profile-pic {
+  filter: grayscale(100%);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 30px;
+}
+
+/* Second Image */
+.profile-pic-hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  object-fit: cover;
+  transition: opacity 0.3s;
+  border-radius: 30px;
+}
+
+.profile-card-outer:hover .profile-card-inner {
+  transform: scale(1) rotate(1deg);
+}
+
+.profile-card-outer:hover .profile-pic-hover {
+  opacity: 1;
+}
+
+.profile-name {
+  margin-top: 15px;
+  color: #ee4d2d;
+  font-size: 18px;
+}
+
+.profile-role {
+  margin-top: 5px;
+  color: #979797;
+  font-weight: 100;
+  font-size: 12px;
+}

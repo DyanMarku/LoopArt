@@ -19,11 +19,12 @@
 
   .login-box {
     max-width: 400px;
-    /* Adjust the login box width as needed */
     border-radius: 10px;
     background-color: #fff;
-    /* Change to desired background color */
     padding: 20px;
+    box-shadow: -10px 10px 31px 1px rgba(0, 0, 0, 0.49);
+    -webkit-box-shadow: -10px 10px 31px 1px rgba(0, 0, 0, 0.49);
+    -moz-box-shadow: -10px 10px 31px 1px rgba(0, 0, 0, 0.49);
   }
 
   .login-box-msg {
@@ -102,7 +103,7 @@ if (isset($_SESSION['user'])) {
         </div>
         <div class="row">
           <div class="col-xs-4">
-            <button type="submit" class="btn btn-primary btn-block btn-flat" name="login" style="background-color: #EE4D2D; border-color: transparent;"><i class="fa fa-sign-in"></i> Sign In</button>
+            <button type="submit" class="btn btn-primary btn-block btn-flat" name="login" style="background-color: #EE4D2D; border-color: transparent; width: auto;"><i class="fa fa-sign-in"></i> Sign In</button>
           </div>
         </div>
       </form>

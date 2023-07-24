@@ -45,14 +45,14 @@ if (isset($_GET['category'])) {
         ?>
         <div class="row">
           <div class="col-xs-12">
-            <div class="box" style="border-radius: 10px; background-color: #D9D9D9;">
+            <div class="box" style="border-radius: 10px; background-color: #D9D9D9; ">
               <div class="box-header with-border">
                 <a href="#addnew" data-toggle="modal" class="btn btn-primary btn-sm btn-flat" id="addproduct" style="background-color: #EE4D2D; border-color:#EE4D2D; "><i class="fa fa-plus"></i> New</a>
                 <div class="pull-right">
                   <form class="form-inline">
                     <div class="form-group">
                       <label>Category: </label>
-                      <select class="form-control input-sm" id="select_category">
+                      <select class="form-control input-sm" id="select_category" style="background-color: gray; color: white">
                         <option value="0">ALL</option>
                         <?php
                         $conn = $pdo->open();
@@ -63,7 +63,7 @@ if (isset($_GET['category'])) {
                         foreach ($stmt as $crow) {
                           $selected = ($crow['id'] == $catid) ? 'selected' : '';
                           echo "
-                            <option value='" . $crow['id'] . "' " . $selected . ">" . $crow['name'] . "</option>
+                            <option style='color: white; font-weight: bold;' value='" . $crow['id'] . "' " . $selected . ">" . $crow['name'] . "</option>
                           ";
                         }
 
@@ -102,8 +102,8 @@ if (isset($_GET['category'])) {
                               <img src='" . $image . "' height='30px' width='30px'>
                               <span class='pull-right'><a href='#edit_photo' class='photo' data-toggle='modal' data-id='" . $row['id'] . "'><i class='fa fa-edit'></i></a></span>
                             </td>
-                            <td><a href='#description' data-toggle='modal' class='btn btn-info btn-sm btn-flat desc' data-id='" . $row['id'] . "'><i class='fa fa-search'></i> View</a></td>
-                            <td>&#36; " . number_format($row['price'], 2) . "</td>
+                            <td><a href='#description' data-toggle='modal' class='btn btn-info btn-sm btn-flat desc' data-id='" . $row['id'] . "'><i class='fa fa-search' ></i> View</a></td>
+                            <td>&#8369; " . number_format($row['price'], 2) . "</td>
                             <td>" . $counter . "</td>
                             <td>
                               <button class='btn btn-success btn-sm edit btn-flat' data-id='" . $row['id'] . "'><i class='fa fa-edit'></i> Edit</button>

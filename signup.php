@@ -1,3 +1,11 @@
+<style>
+  .register-box-body {
+    box-shadow: -10px 10px 31px 1px rgba(0, 0, 0, 0.49);
+    -webkit-box-shadow: -10px 10px 31px 1px rgba(0, 0, 0, 0.49);
+    -moz-box-shadow: -10px 10px 31px 1px rgba(0, 0, 0, 0.49);
+  }
+</style>
+
 <?php include 'includes/session.php'; ?>
 <?php
 if (isset($_SESSION['user'])) {
@@ -35,7 +43,7 @@ if (isset($_SESSION['captcha'])) {
       unset($_SESSION['success']);
     }
     ?>
-    <div class="register-box-body" style="border-radius: 10px; margin-top: 90px">
+    <div class="register-box-body" style="border-radius: 10px; margin-top: 90px;">
       <p class="login-box-msg">Register a new membership</p>
 
       <form action="register.php" method="POST">
