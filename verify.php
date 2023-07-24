@@ -40,7 +40,7 @@
 
 	}
 	else{
-		$_SESSION['error'] = 'Input login credentails first';
+		$_SESSION['error'] = 'Input login credentials first';
 	}
 
 	$pdo->close();

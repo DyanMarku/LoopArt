@@ -1,0 +1,23 @@
+Login Info
+---------------------------
+User Login
+email: customer1@gmail.com
+password: 123
+
+Admin Login
+email: admin@gmail.com
+password: password
+
+--------------------------------------------------------
+Testing Paypal Card Info
+
+Card Type: Visa
+Country of Origin: United States of America
+Card number: 4032034994079302
+Expiry date: 02/2028
+CVC code: 316
+
+------------------------------
+US Phone Number: 1-202-555-0108
+
+link: https://developer.paypal.com/api/rest/sandbox/card-testing/#link-testcardnumbers

@@ -227,6 +227,8 @@ $conn = $pdo->open();
 
   <?php $pdo->close(); ?>
   <?php include 'includes/scripts.php'; ?>
+
+
   <script>
     $(function() {
       var barChartCanvas = $('#barChart').get(0).getContext('2d')
@@ -235,12 +237,12 @@ $conn = $pdo->open();
         labels: <?php echo $months; ?>,
         datasets: [{
           label: 'SALES',
-          fillColor: 'rgba(60,141,188,0.9)',
-          strokeColor: 'rgba(60,141,188,0.8)',
+          fillColor: 'rgba(238, 77, 45,0.9)',
+          strokeColor: 'rgba(238, 77, 45,0.9)',
           pointColor: '#3b8bba',
-          pointStrokeColor: 'rgba(60,141,188,1)',
+          pointStrokeColor: 'rgba(238, 77, 45,0.9)',
           pointHighlightFill: '#fff',
-          pointHighlightStroke: 'rgba(60,141,188,1)',
+          pointHighlightStroke: 'rgba(238, 77, 45,0.9)',
           data: <?php echo $sales; ?>
         }]
       }
@@ -287,6 +289,8 @@ $conn = $pdo->open();
       });
     });
   </script>
+
+
 </body>
 
 </html>
