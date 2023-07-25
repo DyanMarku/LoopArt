@@ -16,7 +16,9 @@
   .container {
     padding-top: 80px;
   }
+
 </style>
+
 
 <header class="main-header">
   <nav class="navbar navbar-static-top" style="background-color: #232323;">
@@ -24,7 +26,7 @@
       <div class="navbar-header">
 
         <a href="index.php" class="navbar-brand" style="margin-top: 10px;">
-          <b style="font-size: 30px;">@_loop.art</b></a>
+          <b style="font-size: 28px; color: white;">LoopArt</b></a>
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
           <i class="fa fa-bars"></i>
         </button>
@@ -125,8 +127,8 @@
               ';
           } else {
             echo "
-                <li><a href='login.php'>LOGIN</a></li>
-                <li><a href='signup.php'>SIGNUP</a></li>
+                <li ><a href='login.php'>LOGIN</a></li>
+                <li ><a href='signup.php'>SIGNUP</a></li>
               ";
           }
           ?>

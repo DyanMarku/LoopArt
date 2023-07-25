@@ -78,8 +78,8 @@
 								</ol>
 								<div class="carousel-inner" style="border-radius: 12px; height: auto;">
 									<div class="item active">
-										<img src="images/carousel2.jpg" alt="First slide" style="width: 100%;" id="pic">
-									
+										<img src="images/carousel2.jpg" alt="First slide" style="width: 100%;">
+
 									</div>
 									<div class="item one">
 										<img src="images/carousel1.jpg" alt="Second slide" style="width: 100%;">
