@@ -45,6 +45,10 @@
       font-family: Poppins, sans-serif;
     }
 
+    ::-webkit-scrollbar {
+      display: none;
+    }
+
     /* Small devices (tablets, 768px and up) */
     @media (min-width: 768px) {
       #navbar-search-input {

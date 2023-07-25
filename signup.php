@@ -1,22 +1,40 @@
 <style>
+  body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #383838;
+  }
+
+  .register-box {
+    width: 100%;
+    max-width: 400px;
+ 
+  }
+
   .register-box-body {
+    border-radius: 10px;
+    margin-top: 80px;
+    padding: 20px;
     box-shadow: -10px 10px 31px 1px rgba(0, 0, 0, 0.49);
     -webkit-box-shadow: -10px 10px 31px 1px rgba(0, 0, 0, 0.49);
     -moz-box-shadow: -10px 10px 31px 1px rgba(0, 0, 0, 0.49);
   }
+
+  .register-box-msg {
+    text-align: center;
+  }
+
+  
 </style>
 
 <?php include 'includes/session.php'; ?>
 <?php
 if (isset($_SESSION['user'])) {
   header('location: cart_view.php');
-}
-
-if (isset($_SESSION['captcha'])) {
-  $now = time();
-  if ($now >= $_SESSION['captcha']) {
-    unset($_SESSION['captcha']);
-  }
 }
 
 ?>
@@ -43,40 +61,30 @@ if (isset($_SESSION['captcha'])) {
       unset($_SESSION['success']);
     }
     ?>
-    <div class="register-box-body" style="border-radius: 10px; margin-top: 90px;">
+    <div class="register-box-body" style="border-radius: 10px; margin-top: 80px;">
       <p class="login-box-msg">Register a new membership</p>
 
       <form action="register.php" method="POST">
         <div class="form-group has-feedback">
           <input type="text" class="form-control" name="firstname" placeholder="Firstname" value="<?php echo (isset($_SESSION['firstname'])) ? $_SESSION['firstname'] : '' ?>" required>
-          <span class="glyphicon glyphicon-user form-control-feedback"></span>
+          <span class="glyphicon glyphicon-user form-control-feedback" style="color:#EE4D2D"></span>
         </div>
         <div class="form-group has-feedback">
           <input type="text" class="form-control" name="lastname" placeholder="Lastname" value="<?php echo (isset($_SESSION['lastname'])) ? $_SESSION['lastname'] : '' ?>" required>
-          <span class="glyphicon glyphicon-user form-control-feedback"></span>
+          <span class="glyphicon glyphicon-user form-control-feedback" style="color:#EE4D2D"></span>
         </div>
         <div class="form-group has-feedback">
           <input type="email" class="form-control" name="email" placeholder="Email" value="<?php echo (isset($_SESSION['email'])) ? $_SESSION['email'] : '' ?>" required>
-          <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
+          <span class="glyphicon glyphicon-envelope form-control-feedback" style="color:#EE4D2D"></span>
         </div>
         <div class="form-group has-feedback">
           <input type="password" class="form-control" name="password" placeholder="Password" required>
-          <span class="glyphicon glyphicon-lock form-control-feedback"></span>
+          <span class="glyphicon glyphicon-lock form-control-feedback" style="color:#EE4D2D"></span>
         </div>
         <div class="form-group has-feedback">
           <input type="password" class="form-control" name="repassword" placeholder="Retype password" required>
-          <span class="glyphicon glyphicon-log-in form-control-feedback"></span>
+          <span class="glyphicon glyphicon-log-in form-control-feedback" style="color:#EE4D2D"></span>
         </div>
-
-        <?php
-        if (!isset($_SESSION['captcha'])) {
-          echo '
-                <div class="form-group" style="width:100%;">
-                  <div class="g-recaptcha" data-sitekey="6LfY9k4nAAAAAJusQBmzwbTgMRYUkTwrKsNEWmGY"></div>
-                </div>
-              ';
-        }
-        ?>
 
         <hr>
         <div class="row">
@@ -93,7 +101,5 @@ if (isset($_SESSION['captcha'])) {
 
   <?php include 'includes/scripts.php' ?>
 </body>
-
-
 
 </html>
