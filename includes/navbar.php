@@ -24,7 +24,7 @@
       <div class="navbar-header">
 
         <a href="index.php" class="navbar-brand" style="margin-top: 10px;">
-          <b style="font-size: 30px;">LoopArt</b></a>
+          <b style="font-size: 30px;">@_loop.art</b></a>
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
           <i class="fa fa-bars"></i>
         </button>
@@ -36,8 +36,9 @@
           <li><a href="index.php">HOME</a></li>
           <li><a href="about_us.php">ABOUT US</a></li>
           <li><a href="contact_us.php">CONTACT US</a></li>
+          <li><a href="videos.php">VIDEOS</a></li>
           <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">CATEGORY <span class="caret"></span></a>
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">PRODUCT CATEGORY<span class="caret"></span></a>
             <ul class="dropdown-menu" role="menu" style="background-color: white;">
               <?php
 
@@ -79,6 +80,7 @@
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
               <i class="fa fa-shopping-cart" style="font-size: 20px; color: #EE4D2D;"></i>
               <span class="label label-success cart_count"></span>
+
             </a>
             <ul class="dropdown-menu" style="width: 400px;">
               <li class="header">You have <span class="cart_count"></span> item(s) in cart</li>
@@ -131,5 +133,6 @@
         </ul>
       </div>
     </div>
+
   </nav>
 </header>

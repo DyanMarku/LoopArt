@@ -39,6 +39,8 @@
   <!-- Google Recaptcha -->
   <script src='https://www.google.com/recaptcha/api.js'></script>
 
+
+
   <!-- Custom CSS -->
   <style type="text/css">
     * {
@@ -98,7 +100,7 @@
 
     #trending li:before {
       content: "\f046";
-      font-family: FontAwesome;
+      font-family: Poppins, sans-serif;
       display: inline-block;
       margin-left: -1.3em;
       width: 1.3em;

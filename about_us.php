@@ -19,6 +19,8 @@
                 flex-basis: calc(50% - 30px);
                 max-width: 300px;
             }
+
+
         }
 
         @media only screen and (min-width: 992px) {
@@ -43,8 +45,8 @@
             <!-- Main content -->
 
             <h1 style="text-align: center; color: #EE4D2D; font-weight: bold; padding-top: 40px;">MEET THE TEAM</h1>
-            <div class="profile-container">
 
+            <div class="profile-container">
                 <div class="photo-card">
                     <div class="profile-card-outer">
                         <div class="profile-card-inner">
@@ -111,5 +113,6 @@
     </div>
     <?php include 'includes/scripts.php'; ?>
 </body>
+
 
 </html>

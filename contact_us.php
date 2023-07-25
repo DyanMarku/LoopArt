@@ -51,7 +51,7 @@
             <div class="container">
                 <div class="contact-wrap">
                     <div class="contact-in">
-                        <h1 style="padding-bottom: 20px; font-weight: bold; color: white;">CONTACT INFO</h1>
+                        <h1 style="padding-bottom: 50px; font-weight: bold; color: white;">CONTACT INFO</h1>
                         <h4 style="font-weight: bold;"><i class="fa fa-phone" aria-hidden="true"></i> Phone</h4>
                         <p style="font-weight: 200; padding-bottom: 20px;">123-456-789</p>
                         <h4 style="font-weight: bold;"><i class="fa fa-envelope" aria-hidden="true"></i> Email</h4>
@@ -59,9 +59,15 @@
                         <h4 style="font-weight: bold;"><i class="fa fa-map-marker" aria-hidden="true"></i> Address</h4>
                         <p style="font-weight: 200; padding-bottom: 50px;">Teresa St. Anonas, Sta. Mesa, Manila</p>
                         <div class="icons" style="font-size: 30px; padding-top: 20px;">
-                            <a href="https://www.facebook.com/loop.arrtt?mibextid=ZbWKwL" style="margin-right: 20px;"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                            <a href="https://instagram.com/_loop.art?igshid=MzRlODBiNWFlZA==" style="margin-right: 20px;"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                            <a href="https://www.tiktok.com/@_loop.art?_t=8e6sDv8Cxj0&_r=1"><img src="images/tiktok.png" style="width: 23px;"></a>
+                            <a href="https://www.facebook.com/loop.arrtt?mibextid=ZbWKwL" style="margin-right: 20px;"  target="_blank">
+                                <i class="fa fa-facebook" aria-hidden="true" title="facebook"></i>
+                            </a>
+                            <a href="https://instagram.com/_loop.art?igshid=MzRlODBiNWFlZA==" style="margin-right: 20px;"  target="_blank">
+                                <i class="fa fa-instagram" aria-hidden="true" title="instagram"></i>
+                            </a>
+                            <a href="https://www.tiktok.com/@_loop.art?_t=8e6sDv8Cxj0&_r=1"  target="_blank">
+                                <img src="images/tiktok.png" style="width: 23px;" title="tiktok">
+                            </a>
                         </div>
                     </div>
 

@@ -22,10 +22,27 @@
 		-webkit-box-shadow: -9px 8px 16px 3px rgba(0, 0, 0, 0.43);
 		-moz-box-shadow: -9px 8px 16px 3px rgba(0, 0, 0, 0.43);
 	}
+
+	@media screen and (max-width: 768px) {
+		.carousel.slide {
+			width: auto;
+			height: 450px;
+		}
+
+		.carousel-inner .item.active img,
+		.carousel-inner .item.one img,
+		.carousel-inner .item.two img,
+		.carousel-inner .item.three img {
+			height: 440px;
+			/* You can set different heights for each slide on smaller screens */
+		}
+	}
 </style>
 
-<?php include 'includes/session.php'; ?>
 <?php include 'includes/header.php'; ?>
+<?php include 'includes/session.php'; ?>
+
+
 
 <body class="hold-transition skin-blue layout-top-nav">
 	<div class="wrapper">
@@ -34,6 +51,8 @@
 
 		<div class="content-wrapper">
 			<div class="container">
+
+
 
 				<!-- Main content -->
 				<section class="content">
@@ -59,16 +78,17 @@
 								</ol>
 								<div class="carousel-inner" style="border-radius: 12px; height: auto;">
 									<div class="item active">
-										<img src="images/carousel1.jpg" alt="First slide" style="width: 100%;">
+										<img src="images/carousel2.jpg" alt="First slide" style="width: 100%;" id="pic">
+									
 									</div>
 									<div class="item one">
-										<img src="images/carousel2.jpg" alt="Second slide" style="width: 100%;">
+										<img src="images/carousel1.jpg" alt="Second slide" style="width: 100%;">
 									</div>
 									<div class="item two">
-										<img src="images/carousel3.jpg" alt="Third slide" style="width: 100%;">
+										<img src="images/carousel4.jpg" alt="Third slide" style="width: 100%;">
 									</div>
 									<div class="item three">
-										<img src="images/carousel4.jpg" alt="Third slide" style="width: 100%;">
+										<img src="images/carousel3.jpg" alt="Third slide" style="width: 100%;">
 									</div>
 								</div>
 								<a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
@@ -78,28 +98,14 @@
 									<span class="fa fa-angle-right"></span>
 								</a>
 							</div>
-
 						</div>
-
 					</div>
 				</section>
-
 			</div>
 		</div>
 	</div>
 
 
-	<div class="content-wrapper" align="center">
-		<div class="pic-container">
-			<img src="images/carousel2.jpg" style="align-items: center;">
-		</div>
-		<div class="pic-container">
-			<img src="images/carousel3.jpg" style="align-items: center;">
-		</div>
-		<div class="pic-container">
-			<img src="images/carousel4.jpg" style="align-items: center;">
-		</div>
-	</div>
 
 	<?php include 'includes/scripts.php'; ?>
 </body>
