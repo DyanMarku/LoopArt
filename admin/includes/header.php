@@ -44,6 +44,10 @@
       font-family: Poppins, sans-serif;
     }
 
+    ::-webkit-scrollbar {
+      display: none;
+    }
+
     .mt20 {
       margin-top: 20px;
     }
