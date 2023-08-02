@@ -43,6 +43,8 @@ if (!isset($_SESSION['user'])) {
 										<img src="<?php echo (!empty($user['photo'])) ? 'images/' . $user['photo'] : 'images/profile.jpg'; ?>" width="100%">
 									</div>
 									<div class="col-sm-9">
+									<h4>Update your profile before you proceed to checkout</h4>
+
 										<div class="row">
 											<div class="col-sm-3">
 												<h4>Name:</h4>
@@ -57,11 +59,15 @@ if (!isset($_SESSION['user'])) {
 														<a href="#edit" class="btn btn-success btn-flat btn-sm" data-toggle="modal" style="background-color: #EE4D2D; border-color: transparent;"><i class="fa fa-edit"></i> Edit</a>
 													</span>
 												</h4>
+												<span class="pull-right">
+													<a href="cart_view.php" class="btn btn-success btn-flat btn-sm" style="background-color: green; border-color: transparent;">Go to Cart</a>
+												</span>
 												<h4><?php echo $user['email']; ?></h4>
 												<h4><?php echo (!empty($user['contact_info'])) ? $user['contact_info'] : 'N/a'; ?></h4>
 												<h4><?php echo (!empty($user['address'])) ? $user['address'] : 'N/a'; ?></h4>
 												<h4><?php echo date('M d, Y', strtotime($user['created_on'])); ?></h4>
 											</div>
+
 										</div>
 									</div>
 								</div>

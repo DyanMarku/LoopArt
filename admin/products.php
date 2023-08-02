@@ -83,6 +83,8 @@ if (isset($_GET['category'])) {
                     <th>Price</th>
                     <th>Views Today</th>
                     <th>Tools</th>
+                    <th>Quantity</th> <!-- Add this line -->
+
                   </thead>
                   <tbody>
                     <?php
@@ -109,6 +111,9 @@ if (isset($_GET['category'])) {
                               <button class='btn btn-success btn-sm edit btn-flat' data-id='" . $row['id'] . "'><i class='fa fa-edit'></i> Edit</button>
                               <button class='btn btn-danger btn-sm delete btn-flat' data-id='" . $row['id'] . "'><i class='fa fa-trash'></i> Delete</button>
                             </td>
+                            <td>
+                            <input type='number' class='form-control input-sm quantity' value='1' min='1'>
+                        </td>
                           </tr>
                         ";
                       }
@@ -199,6 +204,7 @@ if (isset($_GET['category'])) {
           $('.name').html(response.prodname);
           $('.prodid').val(response.prodid);
           $('#edit_name').val(response.prodname);
+          $('.quantity').val(1); // Reset quantity field to 1
           $('#catselected').val(response.category_id).html(response.catname);
           $('#edit_price').val(response.price);
           CKEDITOR.instances["editor2"].setData(response.description);

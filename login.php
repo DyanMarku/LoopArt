@@ -58,11 +58,13 @@
 </style>
 
 <?php include 'includes/session.php'; ?>
+
 <?php
 if (isset($_SESSION['user'])) {
-  header('location: cart_view.php');
+  header('location: profile.php');
 }
 ?>
+
 <?php include 'includes/header.php'; ?>
 
 <body class="hold-transition login-page" style="background-color: #383838;">
